@@ -67,7 +67,7 @@ const HeroSection = () => {
             <motion.img
               src={profile}
               alt="VisualxSwaroop Avatar"
-              className="relative w-36 md:w-40 rounded-full object-cover border border-white/10 shadow-xl"
+              className="relative w-32 sm:w-36 md:w-40 rounded-full object-cover border border-white/10 shadow-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               animate={{ y: [0, -6, 0] }}
@@ -95,7 +95,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-none text-gradient-primary mb-4 font-display"
+          className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-none text-gradient-primary mb-4 font-display"
         >
           VisualxSwaroop
         </motion.h1>
@@ -105,7 +105,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-lg text-muted-foreground mb-3"
+          className="text-base sm:text-lg text-muted-foreground mb-3"
         >
           Graphic Designer • UI/UX Designer • Frontend Developer
         </motion.p>
@@ -129,14 +129,14 @@ const HeroSection = () => {
         >
           <a
             href="#works"
-            className="btn-shimmer btn-gradient inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold text-sm hover:scale-[1.02] transition"
+            className="btn-shimmer btn-gradient inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-sm hover:scale-[1.02] transition"
           >
             View My Work
           </a>
 
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-xl border border-foreground/10 text-sm hover:border-accent-purple/50 transition"
+            className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 rounded-xl border border-foreground/10 text-sm hover:border-accent-purple/50 transition"
           >
             Contact Me
           </a>
@@ -144,7 +144,7 @@ const HeroSection = () => {
           <a
             href={resumePdf}
             download="Swaroop_Resume.pdf"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-xl border border-foreground/10 text-sm hover:border-accent-blue/50 transition"
+            className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 rounded-xl border border-foreground/10 text-sm hover:border-accent-blue/50 transition"
           >
             Download Resume
           </a>

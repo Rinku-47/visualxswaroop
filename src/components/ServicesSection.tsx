@@ -66,12 +66,12 @@ const ServicesSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-bold tracking-tighter mb-16 text-center text-gradient-subtle font-display"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-16 text-center text-gradient-subtle font-display"
         >
           What I Do
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
@@ -83,7 +83,7 @@ const ServicesSection = () => {
                 boxShadow: `inset 0 0 0 1px rgba(255,255,255,0.15), 0 0 40px -8px ${service.glow}`,
                 transition: { duration: 0.3 },
               }}
-              className="glass-card p-8 group cursor-default relative overflow-hidden"
+              className="glass-card p-6 sm:p-8 group cursor-default relative overflow-hidden"
             >
               {/* Gradient overlay */}
               <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />

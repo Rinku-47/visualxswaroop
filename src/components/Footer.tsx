@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation */}
-        <div className="flex items-center gap-6 text-sm">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-sm">
           {links.map((link) => (
             <a
               key={link.name}
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Social + Back to top */}
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap justify-center items-center gap-3">
 
           {socials.map((social) => (
             <a

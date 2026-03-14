@@ -56,7 +56,7 @@ const ContactSection = () => {
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-accent-purple/5 blur-[120px]" />
 
-      <div className="max-w-2xl mx-auto relative z-10">
+      <div className="max-w-2xl mx-auto relative z-10 px-4">
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -70,7 +70,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-bold tracking-tighter mb-6 text-center text-gradient-subtle font-display"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-6 text-center text-gradient-subtle font-display"
         >
           Let's Work Together
         </motion.h2>
@@ -89,7 +89,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="glass-card p-8 space-y-6"
+          className="glass-card p-6 sm:p-8 space-y-6"
         >
 
           <div>

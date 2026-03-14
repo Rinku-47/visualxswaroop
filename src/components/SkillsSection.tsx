@@ -44,12 +44,12 @@ const SkillsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-bold tracking-tighter mb-16 text-center text-gradient-subtle font-display"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-16 text-center text-gradient-subtle font-display"
         >
           My Toolkit
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
           {skills.map((skill, i) => (
             <motion.div
@@ -64,7 +64,7 @@ const SkillsSection = () => {
                 boxShadow: `0 0 45px -10px ${skill.glow}`,
               }}
 
-              className="glass-card p-6 flex flex-col items-center gap-4 cursor-default group transition-all duration-300"
+              className="glass-card p-4 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 cursor-default group transition-all duration-300"
             >
               <motion.div
                 whileHover={{ rotate: 8 }}

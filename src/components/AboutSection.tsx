@@ -29,7 +29,7 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-3xl md:text-5xl font-bold tracking-tighter mb-8 text-center text-gradient-subtle font-display"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-8 text-center text-gradient-subtle font-display"
         >
           Crafting Digital Experiences
         </motion.h2>
@@ -37,7 +37,7 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto text-center mb-16"
+          className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto text-center mb-16 px-4"
         >
           I'm a creative designer and frontend developer passionate about building
           visually stunning, modern digital experiences. I bridge the gap between
@@ -45,14 +45,14 @@ const AboutSection = () => {
           incredible and perform flawlessly.
         </motion.p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-              className="glass-card p-6 text-center group hover:shadow-[0_0_40px_-8px_hsla(270,85%,60%,0.3)] transition-all duration-300"
+              className="glass-card p-4 sm:p-6 text-center group hover:shadow-[0_0_40px_-8px_hsla(270,85%,60%,0.3)] transition-all duration-300"
             >
               <stat.icon
                 size={24}

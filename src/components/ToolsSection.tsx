@@ -30,12 +30,12 @@ const ToolsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-bold tracking-tighter mb-16 text-center text-gradient-subtle font-display"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-16 text-center text-gradient-subtle font-display"
         >
           Tools I Use
         </motion.h2>
 
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
           {tools.map((tool, i) => (
             <motion.div
               key={tool.name}
