@@ -2,12 +2,12 @@ import { motion, useInView, useMotionValue, useSpring, useTransform } from "fram
 import { useRef, MouseEvent } from "react";
 import { ExternalLink } from "lucide-react";
 
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
-import project6 from "@/assets/project-6.jpg";
+import project1 from "@/assets/webdesign.png";
+import project2 from "@/assets/socialmedia.png";
+import project3 from "@/assets/mobileui.png";
+import project4 from "@/assets/brand.png";
+import project5 from "@/assets/webdev.png";
+import project6 from "@/assets/posters.png";
 
 const projects = [
   {
