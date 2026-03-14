@@ -60,7 +60,7 @@ Deployment
 
 If you'd like to collaborate or work together:
 
-Email: [EMAIL_ADDRESS]  
+Email: swarooprout9848@gmail.com  
 LinkedIn: https://www.linkedin.com/in/swaroop-rout-b9b52b247/  
 GitHub: https://gitthub.com/Rinku-47
 
